@@ -49,12 +49,12 @@
       "sky.rethinkdns.com": [
         "2a06:98c1:3122::",
         "2a06:98c1:3123::",
-        "188.114.99.0",
         "188.114.98.0",
+        "188.114.99.0",
         "104.17.148.22",
         "104.17.147.22",
-        "2a06:98c1:3121::6",
-        "2a06:98c1:3120::6",
+        "2a06:98c1:3120::3",
+        "2a06:98c1:3121::3",
         "188.114.96.3",
         "188.114.97.3"
       ]
@@ -95,8 +95,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "ایران🇮🇷 § 0",
-        "آلمان🇩🇪WoW § 1"
+        "آلمان🇩🇪WoW § 0"
       ],
       "default": "auto"
     },
@@ -104,8 +103,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "ایران🇮🇷 § 0",
-        "آلمان🇩🇪WoW § 1"
+        "آلمان🇩🇪WoW § 0"
       ],
       "url": "http://cp.cloudflare.com/",
       "interval": "10m0s",
@@ -121,43 +119,28 @@
       ],
       "private_key": "cMI4OwCyVFXbGPxK6pgsDIbgsCUAdeAm1YVA+mbCY2U=",
       "server": "162.159.192.1",
-      "server_port": 7156,
+      "server_port": 859,
       "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
       "reserved": "6Oec",
       "mtu": 1280
     },
     {
       "type": "wireguard",
-      "tag": "ایران🇮🇷 § 0",
+      "tag": "آلمان🇩🇪WoW § 0",
       "detour": "Hiddify Warp ✅",
       "local_address": [
         "172.16.0.2/24",
-        "2606:4700:110:823b:2d02:7628:64ca:3f35/128"
+        "2606:4700:110:85e7:6f85:ae71:9a98:89df/128"
       ],
-      "private_key": "wBCniDcQVjY4GL5zNY9HQHjawNnFCqQmTSquHyBopH8=",
-      "server": "162.159.195.130",
-      "server_port": 7103,
+      "private_key": "YDJOLAv8+qvWbTMWrJOFdupo55w0IYCzzMYX3/2Fjlk=",
+      "server": "162.159.192.224",
+      "server_port": 1002,
       "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
-      "reserved": "YpT6",
+      "reserved": "a4zC",
       "mtu": 1330,
       "fake_packets": "10-20",
       "fake_packets_size": "20-60",
       "fake_packets_delay": "5-10"
-    },
-    {
-      "type": "wireguard",
-      "tag": "آلمان🇩🇪WoW § 1",
-      "detour": "ایران🇮🇷 § 0",
-      "local_address": [
-        "172.16.0.2/24",
-        "2606:4700:110:831f:eb64:f898:ea6b:df64/128"
-      ],
-      "private_key": "CIZCe1CKhOEty9YOiS0SZT067E9xma9T4DIQqDJTGk4=",
-      "server": "162.159.192.132",
-      "server_port": 4198,
-      "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
-      "reserved": "EXiD",
-      "mtu": 1280
     },
     {
       "type": "dns",
@@ -227,7 +210,7 @@
     },
     "clash_api": {
       "external_controller": "127.0.0.1:6756",
-      "secret": "7zmjheHBKRm9hHtY"
+      "secret": "-Yv8VPJV4pOA4rqV"
     }
   }
 }
